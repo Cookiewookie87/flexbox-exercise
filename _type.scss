@@ -1,0 +1,12 @@
+@import 'color-palete';
+    
+@mixin type {
+    font: {
+        family: "Helvetica";
+        size: 30px;
+        style: normal;
+        weight: bold;
+    }
+    color: $white;
+}
+
