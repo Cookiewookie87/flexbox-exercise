@@ -3,35 +3,96 @@ body {
   font-size: 30px;
   font-style: normal;
   font-weight: bold;
-  color: #FAFAFA; }
-
-.container {
-  background-color: #FAFAFA;
-  border: 2px solid #212121; }
-
-.box1 {
-  background-color: #43A047;
-  width: 200px;
-  height: 200px; }
-
-.box2 {
-  background-color: #FF9800;
-  width: 200px;
-  height: 200px; }
-
-.box3 {
-  background-color: #1565C0;
-  width: 200px;
-  height: 200px; }
-
-.box4 {
-  background-color: #C62828;
-  width: 200px;
-  height: 200px; }
-
-.box5 {
-  background-color: #757575;
-  width: 200px;
-  height: 200px; }
+  color: #FAFAFA;
+  margin: 0;
+  padding: 0; }
+  body header {
+    display: flex;
+    flex-direction: row; }
+    body header .box1 {
+      background-color: #43A047;
+      width: 200px;
+      height: 200px;
+      flex: 1;
+      display: flex;
+      flex-direction: row; }
+      body header .box1 .box1-1 {
+        background-color: #81C784;
+        width: 150px;
+        height: 150px;
+        margin: 25px 20px 25px 20px;
+        flex: 1; }
+  body main {
+    display: flex;
+    flex-direction: row; }
+    body main .box2 {
+      background-color: #FF9800;
+      width: 200px;
+      height: 200px;
+      flex: 2;
+      display: flex;
+      flex-direction: row; }
+      body main .box2 .left {
+        display: flex;
+        flex-direction: column; }
+        body main .box2 .left .box-left {
+          flex: 1;
+          background-color: #FFCC80;
+          margin: 25px 0 25px 20px;
+          width: 50px; }
+      body main .box2 .right {
+        display: flex;
+        flex-direction: column;
+        flex: 1; }
+        body main .box2 .right .box-right {
+          flex: 1;
+          background-color: #FFCC80;
+          margin: 10px 25px 0 25px; }
+          body main .box2 .right .box-right:first-child {
+            margin-top: 25px; }
+          body main .box2 .right .box-right:last-child {
+            margin-bottom: 25px; }
+    body main .box3 {
+      background-color: #1565C0;
+      width: 200px;
+      height: 200px;
+      flex: 2;
+      display: flex;
+      flex-direction: row; }
+      body main .box3 .box3-1 {
+        flex: 1;
+        background-color: #4FC3F7;
+        margin: 25px 20px 25px 20px; }
+    body main .box4 {
+      background-color: #C62828;
+      width: 200px;
+      height: 200px;
+      flex: 1;
+      display: flex;
+      flex-direction: column; }
+      body main .box4 .box4-1 {
+        flex: 1;
+        background-color: #EF5350;
+        margin: 10px 25px 0 25px; }
+        body main .box4 .box4-1:first-child {
+          margin-top: 25px; }
+        body main .box4 .box4-1:last-child {
+          margin-bottom: 25px; }
+  body footer {
+    display: flex;
+    flex-direction: row; }
+    body footer .box5 {
+      background-color: #757575;
+      width: 200px;
+      height: 200px;
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      body footer .box5 .box5-1 {
+        width: 150px;
+        height: 150px;
+        margin-top: 25px;
+        background-color: #B0BEC5; }
 
 /*# sourceMappingURL=main.css.map */
